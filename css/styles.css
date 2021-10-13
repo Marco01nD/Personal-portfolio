@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,200;1,300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primario: #9400d3;
+    --azul-fondo:  #ff1493;
+
+}
+
+body{
+    font-family: Montserrat, sans-serif;
+    overflow-x: hidden;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background: var(--azul-fondo);
+    color: #fff;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+    
+}
+
+
+.brand{
+ margin-top: -3px;
+ font-size: 32px;
+}
+
+
+
+.brand span{
+    color: var(--color-primario);
+    /* padding-top: 20px; */
+    margin-top: 12px;
+
+}
+
+
+.menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    margin-top: 14px;
+}
+
+
+
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    /* color: aqua; */
+    padding-bottom: 1px;
+    text-decoration: none;
+    border-bottom: 2px solid var(--color-primario);
+    padding: 10px 20px;
+
+}
+
+
+.menu a:hover{
+
+    background: var(--color-primario);
+    color: #ffff;
+    font-weight: bold;
+    transition: ease-in-out .3s;
+    /* padding: 10px; */
+
+
+
+}
+
+
+.menu li{
+    list-style: none;
+}
+
+/* Comienza parte de información personal */
+
+.main{
+    /* con el margin lo que hace es que no le aplica margenes arriba ni abajo, solo de los lados y lo centra respecto al tamaño del width */
+    margin: 0 auto; 
+    width: 80vw;
+    height: 80vh;
+    /* se aplica grid considerando dos columnas de 1 un fr */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    align-items: center;
+  
+}
+
+.main h1{
+    font-size: 3em;
+}
+
+.main img {
+
+    width: 600px;
+}
+
+.info-personal{
+    text-align: center;
+}
+
+
+.descargar{
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--color-primario);
+    /* border: 2px solid var(--color-primario); */
+    /* border-radius: 10px; */
+    color: #fff;
+    font-family:  Montserrat, sans-serif;
+}
+
+
+.descargar:hover{
+  background: var(--color-primario);
+}
+
+
+.sobreMi{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    margin-top: 60px;
+}
+
+.imgAbout{
+    width: 50%;
+    /* background-image: url(img/pikachu.png); */
+    /* background: red; */
+    /* object-fit: contain; */
+}
+
+
+.descAbout{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    
+}
+
+
+.descAbout div{
+    background: purple;
+   width: 45%;
+   margin-bottom: 20px;
+   display: flex;
+   align-items: center;
+    
+}
+
+.descAbout div p{
+  /* margin: auto; */
+}
+
